@@ -1,12 +1,6 @@
-// pages/index.tsx
-import { Metadata } from "next";
+'use client'
 import React from "react";
-
-export const metadata: Metadata = {
-  title: "Lux Defenders",
-  description: "We deal with Cybersecurity incidents, so you don't have to.",
-};
-
+import Typewriter from "typewriter-effect";
 const services = [
   "Network Penetration Testing",
   "Cloud Security Audits",
@@ -42,20 +36,37 @@ const clients = [
 const Home = () => {
   return (
     <div className="relative text-white overflow-hidden">
-        <video
+      <video
         className="absolute top-0 left-0 w-full h-1/2 object-cover z-[-10] pointer-events-none"
         autoPlay
         loop
         muted
         playsInline
         src="/videos/bg.mp4"
-        />
+      />
       <div className="absolute inset-0 " />
-      {/* Content */}
-      <section className="min-h-screen relative bg-blue-900  opacity-60 flex flex-col justify-center items-center text-center px-6">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-up">
+      <section className="min-h-screen relative bg-blue-900 opacity-60 flex flex-col justify-center items-center text-center px-6">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Digital Fortification. Elite Execution.
         </h1>
+        <h2 className="text-4xl font-bold mb-6 text-white">
+          <Typewriter
+            options={{
+              strings: [
+                "Penetration Testing (Ethical Hacking)",
+                "Vulnerability Assessments",
+                "Security Audits & Compliance",
+                "Cloud Security Services",
+                "Incident Response & Digital Forensics",
+                "Managed Security Services (MSSP)",
+                "Cybersecurity Awareness Training",
+                "Data Privacy & Encryption Consulting",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </h2>
         <p
           className="text-lg md:text-xl max-w-2xl"
           data-aos="fade-up"
@@ -65,9 +76,7 @@ const Home = () => {
           stays resilient and compliant.
         </p>
       </section>
-
-      {/* Services */}
-      <section className="bg-black bg-opacity-90 py-16 px-6 text-center relative z-10">
+     <section className="bg-black bg-opacity-90 py-16 px-6 text-center relative z-10">
         <h2 className="text-3xl font-semibold mb-8" data-aos="fade-up">
           Our Core Cybersecurity Services
         </h2>

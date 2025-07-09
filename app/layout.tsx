@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({
   children,
@@ -22,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         <Navbar />
-        {children}
+        {children}<Footer />
       </body>
     </html>
   );
