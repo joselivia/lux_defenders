@@ -18,7 +18,7 @@ export default function Footer() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="bg-gray-900 text-white py-10 px-4 md:px-10 mt-20"
+      className="bg-gray-900 text-white py-10 px-4 md:px-10"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
     <div className="flex items-start gap-4">

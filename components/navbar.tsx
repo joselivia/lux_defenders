@@ -5,10 +5,10 @@ import { BiMenuAltRight, BiX } from 'react-icons/bi';
 import Image from 'next/image';
 import { TiThMenu } from 'react-icons/ti';
 const navItems = [
-  { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About Us' },
-  { href: '#services', label: 'Services' },
-  { href: '#projects', label: 'Projects' },
+  { href: '/', label: 'Home' },
+  { href: '/About', label: 'About Us' },
+  { href: '/Service', label: 'Our Services' },
+  { href: '/Projects', label: 'Our Projects' },
 ];
 
 const Navbar: React.FC = () => {
