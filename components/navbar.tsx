@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import {  BiX } from 'react-icons/bi';
+import { BiMenuAltRight, BiX } from 'react-icons/bi';
 import Image from 'next/image';
 import { TiThMenu } from 'react-icons/ti';
 
@@ -24,9 +24,9 @@ const Navbar: React.FC = () => {
     );
 
     if (matchingItem) {
-      setActiveSection(matchingItem.href.replace('/', '') );
+      setActiveSection(matchingItem.href.replace('/', '') || 'Home');
     } else {
-      setActiveSection('');
+      setActiveSection('Home');
     }
   }, []);
 
