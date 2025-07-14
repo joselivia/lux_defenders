@@ -3,7 +3,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 const services = [
   "Network Penetration Testing",
-  "Red Teaming / Blue teaming",
+  "Red/Blue Team Engagement",
   "Incident Response & Forensics",
   "Security Awareness Training",
   "Compliance & Risk Assessments",
