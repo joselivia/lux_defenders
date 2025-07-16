@@ -7,12 +7,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const images = [
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
+  "/images/aa.png",
+  "/images/bb.png",
+  "/images/cc.png",
+  "/images/a1.png",
+  "/images/a3.png",
+  "/images/penetration.png",
 ];
 
 export default function TeamShowcase() {

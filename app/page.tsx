@@ -28,9 +28,9 @@ const portfolio = [
 ];
 
 const clients = [
-  { name: "CyberShield Inc", logo: "/logos/cybershield.png" },
-  { name: "FinSecure", logo: "/logos/finsecure.png" },
-  { name: "MediSafe Systems", logo: "/logos/medisafe.png" },
+  { name: "CyberShield Inc", logo: "/images/b2.png" },
+  { name: "FinSecure", logo: "/images/b3.png" },
+  { name: "MediSafe Systems", logo: "/images/b4.png" },
 ];
 
 const Home = () => {

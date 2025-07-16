@@ -22,12 +22,12 @@ const services = [
       "We secure your internal and external networks, firewalls, and infrastructure against unauthorized access.",
     icon: <FaNetworkWired size={30} />,
   },
-  {
-    title: "Cloud Security",
-    description:
-      "Protect your cloud assets with customized security configurations, encryption, and identity management.",
-    icon: <FaCloud size={30} />,
-  },
+{
+  title: "Red/Blue Team Engagement",
+  description:
+    "Simulate real-world cyberattacks and defenses with Red/Blue Team exercises to identify vulnerabilities, strengthen security controls, and enhance incident response capabilities.",
+  icon:<FaShieldAlt size={30} />
+},
   {
     title: "Security Awareness Training",
     description:

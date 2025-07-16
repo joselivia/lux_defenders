@@ -10,37 +10,37 @@ const projects = [
     title: "Banking Sector Penetration Test",
     description:
       "Simulated advanced cyber attacks on a regional bank's infrastructure to uncover vulnerabilities and strengthen defenses.",
-    image: "/bank.jpg",
+    image: "/images/penetration.png",
   },
   {
     title: "Cloud Security Hardening",
     description:
       "Conducted a full audit and reconfiguration of AWS cloud policies for a fintech startup.",
-    image: "/cloud.jpg",
+    image: "/images/cloud.jpg",
   },
   {
     title: "Incident Response for Retail Breach",
     description:
       "Responded to a live ransomware incident, containing and recovering affected retail infrastructure within 24 hours.",
-    image: "/response.jpg",
+    image: "/images/Incident-Response.jpg",
   },
   {
     title: "GDPR Compliance Audit",
     description:
       "Performed a full GDPR readiness assessment and helped implement compliance strategies for a healthcare client.",
-    image: "/gdpr.jpg",
+    image: "/images/GDPR.png",
   },
   {
     title: "Security Awareness Training",
     description:
       "Trained 500+ employees across 3 organizations in phishing detection, secure password use, and device hygiene.",
-    image: "/training.jpg",
+    image: "/images/security-Awareness.png",
   },
   {
     title: "Threat Intelligence Integration",
     description:
       "Integrated SIEM and threat intel feeds to monitor, detect and react to active threats in real-time.",
-    image: "/threat.jpg",
+    image: "/images/Cyber-Threat-Intelligence.png",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function ProjectsPage() {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className="object-fit rounded-t-xl"
                 />
               </div>
               <div className="p-5">

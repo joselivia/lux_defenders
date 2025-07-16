@@ -6,12 +6,10 @@ import { FaUserCircle } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const partnerLogos = [
-  "/partners/cisco.png",
-  "/partners/microsoft.png",
-  "/partners/aws.png",
-  "/partners/google.png",
-  "/partners/ibm.png",
-  "/partners/cloudflare.png",
+  "/images/b1.png",
+  "/images/b2.png",
+  "/images/b3.png",
+  "/images/b4.png",
 ];
 
 const testimonials = [
@@ -52,32 +50,32 @@ export default function PartnersAndTestimonials() {
         },
       });
     } else {
-      controls.stop(); // pause on hover
+      controls.stop(); 
     }
   }, [isHovered, controls]);
 
   return (
     <>
       {/* Trusted Partners */}
-      <section className="bg-[#002226] text-white py-16 px-6 md:px-10">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 mb-10">
-            Trusted by Industry Leaders
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center justify-center">
-            {partnerLogos.map((logo, i) => (
-              <div key={i} className="relative h-12 w-full">
-                <Image
-                  src={logo}
-                  alt={`Partner ${i}`}
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            ))}
-          </div>
+<section className="bg-[#002226] text-white py-16 px-4 sm:px-6 md:px-10">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 mb-10">
+      Trusted by Industry Leaders
+    </h2>
+    <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-5xl mx-auto justify-items-center items-center">
+      {partnerLogos.map((logo, i) => (
+        <div key={i} className="relative h-24 w-24 xs:h-32 xs:w-32 sm:h-40 sm:w-40 md:h-48 md:w-48">
+          <Image
+            src={logo}
+            alt={`Partner ${i}`}
+            fill
+            className="object-contain rounded-full"
+          />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Testimonials Carousel */}
       <section className="bg-[#001a1c] text-white py-16 px-6 md:px-10 overflow-hidden">

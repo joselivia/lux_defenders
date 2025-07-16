@@ -11,7 +11,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 import { ImLocation2 } from "react-icons/im";
 import { MdOutlinePhoneForwarded } from "react-icons/md";
-import Image from 'next/image';
+import Image from "next/image";
 export default function Footer() {
   return (
     <motion.footer
@@ -21,32 +21,34 @@ export default function Footer() {
       className="bg-gray-900 text-white py-10 px-4 md:px-10"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
-    <div className="flex items-start gap-4">
-  <div className="shrink-0">
-    <Image 
-      src="/logo.png"
-      alt="Logo"
-      width={80}
-      height={80}
-      className="rounded-md"
-    />
-  </div>
-  <div>
-    <h2 className="text-2xl font-bold mb-1">CyberSecure</h2>
-    <p className="text-gray-400 max-w-xs">
-      Empowering your digital world with secure, modern cybersecurity solutions.
-    </p>
-  </div>
-</div>
-
+        <div className="flex items-start gap-4">
+          <div className="shrink-0">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={80}
+              height={80}
+              className="rounded-md"
+            />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold mb-1">CyberSecure</h2>
+            <p className="text-gray-400 max-w-xs">
+              Empowering your digital world with secure, modern cybersecurity
+              solutions.
+            </p>
+          </div>
+        </div>
 
         <div>
           <h3 className="text-xl font-semibold mb-2">Contact</h3>
           <ul className="text-gray-400 flex flex-col space-y-2">
-            <a href="mailto:contact@cybersecure.com">
+            <a
+              href="mailto:outreach@luxdefenders.live "
+            >
               <li className="flex items-center gap-2">
                 <HiOutlineMail />
-                contact@cybersecure.com
+                outreach@luxdefenders.live
               </li>
             </a>
             <li className="flex items-center gap-2">
