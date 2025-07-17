@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaShieldAlt, FaBug, FaNetworkWired, FaCloud, FaUsers, FaSearch } from "react-icons/fa";
+import { FaShieldAlt, FaBug, FaNetworkWired, FaUsers, FaSearch } from "react-icons/fa";
+import { RiUserCommunityLine } from "react-icons/ri";
 
 const services = [
   {
@@ -26,7 +27,7 @@ const services = [
   title: "Red/Blue Team Engagement",
   description:
     "Simulate real-world cyberattacks and defenses with Red/Blue Team exercises to identify vulnerabilities, strengthen security controls, and enhance incident response capabilities.",
-  icon:<FaShieldAlt size={30} />
+  icon:<RiUserCommunityLine  size={30} />
 },
   {
     title: "Security Awareness Training",

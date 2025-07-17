@@ -2,10 +2,7 @@
 import { motion } from "framer-motion";
 import {
   FaFacebookF,
-  FaLinkedinIn,
-  FaWhatsapp,
-  FaTelegram,
-  FaTiktok,
+  FaInstagram,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
@@ -67,35 +64,21 @@ export default function Footer() {
           <h3 className="text-xl font-semibold mb-2">Follow Us</h3>
           <div className="flex space-x-4">
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61578065709501"
               className="text-gray-400 hover:text-blue-500 transition"
             >
               <FaFacebookF size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-black transition">
+            <a href="https://x.com/LuxDefenders" className="text-gray-400 hover:text-black transition">
               <FaXTwitter size={24} />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/luxdefenders/"
               className="text-gray-400 hover:text-blue-600 transition"
             >
-              <FaLinkedinIn size={24} />
+              <FaInstagram size={24} />
             </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-green-600 transition"
-            >
-              <FaWhatsapp size={24} />
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-blue-600 transition"
-            >
-              <FaTelegram size={24} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-red-500 transition">
-              <FaTiktok size={24} />
-            </a>
+              
           </div>
         </div>
       </div>

@@ -1,12 +1,9 @@
-// components/TeamShowcase.tsx
-
 "use client";
-
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const images = [
+const images_1= [
   "/images/aa.png",
   "/images/bb.png",
   "/images/cc.png",
@@ -14,7 +11,14 @@ const images = [
   "/images/a3.png",
   "/images/penetration.png",
 ];
-
+const images_2 = [
+  "/images/a1.png",
+  "/images/a3.png",
+  "/images/b2.png",
+  "/images/b4.png",
+  "/images/b1.png",
+  "/images/bb.png",
+];
 export default function TeamShowcase() {
   return (<div>
       <section className="flex flex-col md:flex-row bg-[#002f34] text-white min-h-screen overflow-hidden">
@@ -41,7 +45,7 @@ export default function TeamShowcase() {
                 ease: "linear",
               }}
             >
-              {[...images, ...images].map((src, index) => (
+    {(row === 0 ? images_1 : images_2).map((src, index) => (
                 <div
                   key={`${row}-${index}`}
                   className="min-w-[200px] md:min-w-[250px] h-[200px] md:h-[300px] relative"
