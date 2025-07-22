@@ -1,6 +1,7 @@
-'use client'
+"use client";
 import React from "react";
 import Typewriter from "typewriter-effect";
+import AnimatedCounter from "./components/AnimatedCounter";
 const services = [
   "Network Penetration Testing",
   "Red/Blue Team Engagement",
@@ -8,7 +9,36 @@ const services = [
   "Security Awareness Training",
   "Compliance & Risk Assessments",
 ];
-
+const products = [
+  {
+    name: "LuxOS (Operating System)",
+    description:
+      "A secure, lightweight, and privacy-focused operating system designed for enterprise and individual cybersecurity needs.",
+    icon: "/icons/os-icon.svg",
+    link: "",
+  },
+  {
+    name: "Secure Background Remover",
+    description:
+      "Remove image backgrounds securely on-device, ensuring sensitive data never leaves your control.",
+    icon: "/icons/bg-remover-icon.svg",
+    link: "",
+  },
+  {
+    name: "Threat Intelligence Platform",
+    description:
+      "Real-time threat feeds and actionable insights to proactively defend against emerging cyber threats.",
+    icon: "/icons/threat-intelligence-icon.svg",
+    link: "",
+  },
+  {
+    name: "Secure Communication Suite",
+    description:
+      "End-to-end encrypted communication tools for secure team collaboration and data exchange.",
+    icon: "/icons/comm-suite-icon.svg",
+    link: "",
+  },
+];
 const portfolio = [
   {
     title: "Healthcare Network Hardening",
@@ -45,8 +75,10 @@ const Home = () => {
         src="/videos/bg.mp4"
       />
       <div className="absolute inset-0 " />
-      <section className="min-h-screen relative bg-blue-900 opacity-60 flex flex-col justify-center items-center text-center px-6">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+      <section className="min-h-screen relative bg-blue-900 opacity-70 flex flex-col justify-center items-center text-center px-6">
+        <div className="mx-auto text-center mb-10 z-10">
+        
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
           Digital Fortification. Elite Execution.
         </h1>
         <h2 className="text-4xl font-bold mb-6 text-white">
@@ -68,15 +100,46 @@ const Home = () => {
           />
         </h2>
         <p
-          className="text-lg md:text-xl max-w-2xl"
+          className="text-lg md:text-xl  text-white"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           We protect, assess, and respond — ensuring your digital infrastructure
           stays resilient and compliant.
-        </p>
+        </p>  </div>
+        <div className="container mx-auto p-6  text-center">
+          <h2 className="text-5xl font-extrabold mb-12 text-blue-900 dark:text-white">
+            Our Innovative Products
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {products.map((product, index) => (
+              <a
+                key={index}
+                href={product.link}
+                className="block p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300
+                         bg-[#001a1c] text-gray-800 dark:text-gray-200
+                         transform hover:-translate-y-2"
+              >
+                {product.icon && (
+                  <img
+                    src={product.icon}
+                    alt={`${product.name} Icon`}
+                    className="w-16 h-16 mx-auto mb-4"
+                  />
+                )}
+                <h3 className="text-2xl font-semibold mb-2 text-blue-800 dark:text-blue-400">
+                  {product.name}
+                </h3>
+                <p className="text-md text-gray-600 dark:text-gray-400">
+                  {product.description}
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
       </section>
-     <section className="bg-black bg-opacity-90 py-16 px-6 text-center relative z-10">
+
+      <section className="bg-black bg-opacity-90 py-16 px-6 text-center relative z-10">
         <h2 className="text-3xl font-semibold mb-8" data-aos="fade-up">
           Our Core Cybersecurity Services
         </h2>
