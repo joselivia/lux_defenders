@@ -77,37 +77,37 @@ const Home = () => {
       <div className="absolute inset-0 " />
       <section className="min-h-screen relative bg-blue-900 opacity-70 flex flex-col justify-center items-center text-center px-6">
         <div className="mx-auto text-center mb-10 z-10">
-        
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
-          Digital Fortification. Elite Execution.
-        </h1>
-        <h2 className="text-4xl font-bold mb-6 text-white">
-          <Typewriter
-            options={{
-              strings: [
-                "Penetration Testing (Ethical Hacking)",
-                "Vulnerability Assessments",
-                "Security Audits & Compliance",
-                "Cloud Security Services",
-                "Incident Response & Digital Forensics",
-                "Managed Security Services (MSSP)",
-                "Cybersecurity Awareness Training",
-                "Data Privacy & Encryption Consulting",
-              ],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </h2>
-        <p
-          className="text-lg md:text-xl  text-white"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          We protect, assess, and respond — ensuring your digital infrastructure
-          stays resilient and compliant.
-        </p>  </div>
-        <div className="container mx-auto p-6  text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
+            Digital Fortification. Elite Execution.
+          </h1>
+          <h2 className="text-4xl font-bold mb-6 text-white">
+            <Typewriter
+              options={{
+                strings: [
+                  "Penetration Testing (Ethical Hacking)",
+                  "Vulnerability Assessments",
+                  "Security Audits & Compliance",
+                  "Cloud Security Services",
+                  "Incident Response & Digital Forensics",
+                  "Managed Security Services (MSSP)",
+                  "Cybersecurity Awareness Training",
+                  "Data Privacy & Encryption Consulting",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h2>
+          <p
+            className="text-lg md:text-xl  text-white"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            We protect, assess, and respond — ensuring your digital
+            infrastructure stays resilient and compliant.
+          </p>
+        </div>
+        <div className="container mx-auto p-6 bg-black bg-opacity-90 text-center">
           <h2 className="text-5xl font-extrabold mb-12 text-blue-900 dark:text-white">
             Our Innovative Products
           </h2>
@@ -130,7 +130,7 @@ const Home = () => {
                 <h3 className="text-2xl font-semibold mb-2 text-blue-800 dark:text-blue-400">
                   {product.name}
                 </h3>
-                <p className="text-md text-gray-600 dark:text-gray-400">
+                <p className="text-lg text-white text-bold">
                   {product.description}
                 </p>
               </a>
