@@ -10,6 +10,7 @@ const navItems = [
   { href: '/About', label: 'About Us' },
   { href: '/Service', label: 'Our Services' },
   { href: '/Projects', label: 'Our Projects' },
+  { href: '/Tools', label: 'Tools' },
 ];
 
 const Navbar: React.FC = () => {
@@ -65,7 +66,7 @@ const Navbar: React.FC = () => {
     <header className="sticky top-0 z-50 w-full bg-[#1a1a2e] text-white shadow-md">
       <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
         <div className="w-32 sm:w-40 md:w-48">
-          <Image src="/images/logo.png" alt="logo" width={200} height={300} />
+          <Image src="/images/logo.png" alt="logo" width={200} height={400} />
       
         </div>
 

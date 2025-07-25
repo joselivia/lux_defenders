@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import AnimatedCounter from "./components/AnimatedCounter";
 const services = [
   "Network Penetration Testing",
   "Red/Blue Team Engagement",
