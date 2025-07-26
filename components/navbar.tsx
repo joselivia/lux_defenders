@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { BiMenuAltRight, BiX } from 'react-icons/bi';
+import { BiX } from 'react-icons/bi';
 import Image from 'next/image';
 import { TiThMenu } from 'react-icons/ti';
 
@@ -65,11 +65,7 @@ const Navbar: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-[#1a1a2e] text-white shadow-md">
       <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
-        <div className="w-32 sm:w-40 md:w-48">
-          <Image src="/images/logo.png" alt="logo" width={200} height={400} />
-      
-        </div>
-
+        <Image src="/images/logo.png" alt="Logo" width={150} height={100} />
         <nav
           className={`${
             menuOpen ? 'flex' : 'hidden'
