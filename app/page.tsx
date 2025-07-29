@@ -8,36 +8,7 @@ const services = [
   "Security Awareness Training",
   "Compliance & Risk Assessments",
 ];
-const products = [
-  {
-    name: "LuxOS (Operating System)",
-    description:
-      "A secure, lightweight, and privacy-focused operating system designed for enterprise and individual cybersecurity needs.",
-    icon: "/icons/os-icon.svg",
-    link: "",
-  },
-  {
-    name: "Secure Background Remover",
-    description:
-      "Remove image backgrounds securely on-device, ensuring sensitive data never leaves your control.",
-    icon: "/icons/bg-remover-icon.svg",
-    link: "",
-  },
-  {
-    name: "Threat Intelligence Platform",
-    description:
-      "Real-time threat feeds and actionable insights to proactively defend against emerging cyber threats.",
-    icon: "/icons/threat-intelligence-icon.svg",
-    link: "",
-  },
-  {
-    name: "Secure Communication Suite",
-    description:
-      "End-to-end encrypted communication tools for secure team collaboration and data exchange.",
-    icon: "/icons/comm-suite-icon.svg",
-    link: "",
-  },
-];
+
 const portfolio = [
   {
     title: "Healthcare Network Hardening",
@@ -106,36 +77,7 @@ const Home = () => {
             infrastructure stays resilient and compliant.
           </p>
         </div>
-        <div className="container mx-auto p-6 bg-black bg-opacity-90 text-center">
-          <h2 className="text-5xl font-extrabold mb-12 text-blue-900 dark:text-white">
-            Our Innovative Products
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {products.map((product, index) => (
-              <a
-                key={index}
-                href={product.link}
-                className="block p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300
-                         bg-[#001a1c] text-gray-800 dark:text-gray-200
-                         transform hover:-translate-y-2"
-              >
-                {product.icon && (
-                  <img
-                    src={product.icon}
-                    alt={`${product.name} Icon`}
-                    className="w-16 h-16 mx-auto mb-4"
-                  />
-                )}
-                <h3 className="text-2xl font-semibold mb-2 text-blue-800 dark:text-blue-400">
-                  {product.name}
-                </h3>
-                <p className="text-lg text-white text-bold">
-                  {product.description}
-                </p>
-              </a>
-            ))}
-          </div>
-        </div>
+   
       </section>
 
       <section className="bg-black bg-opacity-90 py-16 px-6 text-center relative z-10">
